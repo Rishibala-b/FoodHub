@@ -1,18 +1,18 @@
-FoodHub 
+# FoodHub 
 
 FoodHub is a food‑themed web application that allows users to explore categorized food menus, search for dishes, and add items to a cart. It includes user authentication using Firebase and demonstrates a clean separation of UI, logic, and authentication flow. The project is built using a pure HTML, CSS, and JavaScript stack with Firebase Authentication. No frontend framework is used, making it simple, lightweight, and easy to understand for learning purposes.
 
-Tech Stack
+# Tech Stack
 
-Frontend
+## Frontend
 
 HTML
 
 CSS 
 
- JavaScript
+JavaScript
 
-Authentication
+## Authentication
 
 Firebase Authentication
 
@@ -20,19 +20,19 @@ Email & Password login
 
 Google Sign‑In
 
-Storage
+## Storage
 
 Browser localStorage (user session & cart data)
 
-Build / Tools
+## Build / Tools
 
 VS Code
 
 Git & GitHub
 
-Core Features & Use Cases
+# Core Features & Use Cases
 
-Authentication
+## Authentication
 
 User login using Firebase Email/Password
 
@@ -42,7 +42,7 @@ Authenticated user details stored in localStorage
 
 Redirects to FoodHub home page after successful login
 
-Food Menu Browsing
+## Food Menu Browsing
 
 Categorized food menus such as:
 
@@ -56,20 +56,21 @@ Carousel‑based card layout for each category
 
 Clean and responsive UI
 
-Search
+## Search
 
 Search bar with dynamic suggestions
 
 Filter food items by name
 
-Cart Functionality
+## Cart Functionality
 
 Add food items to cart
 
 Shared cart state between home page and cart page
 
-Repository Structure
+# Repository Structure
 
+```
 FoodHub/
 ├── images/                    # All food images, banners, icons used in the project
 ├── FoodHub.html            # Main landing / home page
@@ -89,7 +90,13 @@ FoodHub/
 ├── README.md                   # Project documentation
 └── .gitignore
 
-Firebase Configuration
+```
+
+# Images & Assets
+
+All images used in the FoodHub project (food item images, banners, icons, and UI graphics) are stored locally inside the images/ folder within the repository. No external image links are used, ensuring the project works fully offline once downloaded.
+
+# Firebase Configuration
 
 Create a Firebase project at https://console.firebase.google.com
 
@@ -101,6 +108,7 @@ Google Provider
 
 Copy Firebase config and place it in:
 
+```
 // signup.js
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -110,7 +118,8 @@ const firebaseConfig = {
   messagingSenderId: "...",
   appId: "..."
 };
+```
 
-License
+# License
 
 This project is for educational and learning purposes.
